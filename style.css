@@ -1,0 +1,405 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1c1c01;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fdfcfc;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fdfbfb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    color: #fdfbfb;
+}
+
+/* Section Styles */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+/* Home Section */
+#home {
+    background-color: #f9fafc;
+    padding: 60px 20px;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-text {
+    flex: 1;
+    max-width: 600px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+/* Home Section Text Styling */
+.home-text p {
+    text-align: justify; /* Ensures text alignment on both left and right */
+    font-size: 1.1em;    /* Optional: Adjust font size for readability */
+    line-height: 1.8;    /* Optional: Improve spacing between lines */
+    margin-bottom: 15px; /* Optional: Consistent spacing between paragraphs */
+}
+
+.home-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0078D4;
+}
+
+.home-text h1 span {
+    color: #005fa3;
+    font-weight: bold;
+}
+
+.home-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-image {
+        margin-top: 20px;   
+    }
+}
+
+/* Skills */
+/* Skills Section */
+#skills {
+    background: linear-gradient(135deg,  #bff7e2, #fefefe); /* Soft gradient */
+    padding: 60px 20px;
+    border-radius: 10px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #0078D4; /* Professional blue color */
+    text-align: center;
+}
+
+/* Skills Subsection */
+.skills-subsection {
+    margin-bottom: 30px;
+}
+
+.skills-subsection h3 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.skill {
+    background: #0078D4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded buttons for skills */
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for individual skills */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #005fa3;
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+/* About Me Section */
+#about {
+    background: linear-gradient(135deg, #0078D4, #003f7f); /* Contrasting gradient background */
+    color: #ffffff; /* Light text for contrast */
+    padding: 60px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth with shadow */
+}
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff; /* White text for header */
+    text-align: center;
+}
+
+/* About Me Text */   
+/* About Me Section */
+#about {
+    background: linear-gradient(135deg, #ace8f0, #fcfdfd); /* Soft teal gradient */
+    color: #004d40; /* Dark teal for text */
+    padding: 60px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #004d40; /* Dark teal for the heading */
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8; /* Improve readability */
+    text-align: justify; /* Align text neatly */
+    font-size: 1.2em; /* Slightly larger font for readability */
+    color: #00695c; /* Medium teal for paragraph text */
+}
+
+.about-text strong {
+    color: #00796b; /* Deep teal for highlighted text */
+}
+
+/* Experience */
+/* Experience Section Styles */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.exp-card {
+    text-align: center;
+    padding: 15px;
+    background: #f9fafc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exp-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for client1.jpeg */
+.exp-card img[src="client1.jpeg"] {
+    height: 120px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Specific styles for client2.jpeg */
+.exp-card img[src="client2.jpeg"] {
+    height: 120px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Specific styles for client3.jpeg */
+.exp-card img[src="client3.jpeg"] {
+    height: 120px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Specific styles for client4.jpeg */
+.exp-card img[src="client4.jpeg"] {
+    height: 120px;
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Experience Section Text Styling */
+.exp-card p {
+    text-align: justify; /* Ensures text alignment on both left and right */
+    font-size: 1em;      /* Optional: Adjust font size for readability */
+    line-height: 1.6;    /* Optional: Improve spacing between lines */
+    margin-bottom: 10px; /* Optional: Consistent spacing between paragraphs */
+    margin: 5px 0;
+}
+.exp-card p strong {
+    display: block; /* Ensures block-level layout */
+    text-align: center; /* Centers the text */
+    font-size: 1.2em; /* Optional: Adjust font size */
+}
+
+/* Projects */
+/* Projects Section */
+#projects {
+    background: linear-gradient(135deg, #f5cbbf, #fcfcfc); /* Soft teal gradient */
+    color: #004d40; /* Dark teal for text */
+    padding: 60px 20px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #f76606; /* Dark teal for the heading */
+}
+
+#projects p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #030005; /* Medium teal for text */
+}
+
+#projects .btn {
+    display: inline-block;
+    background: #f76606; /* Deep teal for the button */
+    color: #ffffff; /* White text for contrast */
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#projects .btn:hover {
+    background-color: #004d40; /* Slightly darker teal on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f0f4f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0078D4;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background: #faf5de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 250px;
+}
+/* Contact Section Styling */
+.contact-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Same black as used in Experience Container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-item h3 i {
+    font-size: 1.2em;
+    color: #333; /* Same black as used in Experience Container */
+}
+
+.contact-item p a {
+    color: #333; /* Same black as used in Experience Container */
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item p a:hover {
+    transform: scale(1.05); /* Add subtle zoom effect */
+    text-decoration: underline; /* Optional underline on hover */
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
