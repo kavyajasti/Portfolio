@@ -95,6 +95,29 @@ nav ul li a:hover {
     color: #005fa3;
     font-weight: bold;
 }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: #0078D7;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background: #0078D7;
+}
+
+.btn-primary:hover {
+    background: #005bb5;
+}
+
 
 .home-image {
     flex: 1;
